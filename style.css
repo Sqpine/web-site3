@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    margin: 0;
+}
+header{
+    padding: 20px 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    width:100%;
+    height: 100%;
+}
+.littleLogo{
+    padding-left: 100px;
+    width:10%;
+    height: 10%;
+}
+.littleLogos{
+    width:60%;
+    height: 60%;
+}
+header a{
+    color: #5C5C5C;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    border-bottom: 2px solid transparent;
+}
+header a:hover{
+    animation: myanim 3s ease-in-out;
+}
+@keyframes myanim {
+    20% {
+        border-bottom: 2px solid #5C5C5C;
+    }
+}
+.littleLogo a{
+    margin-left: 10px;
+}
+.button{
+    background: #161616;
+    border-radius: 100px;
+}
+.button:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    background: #FFFFFF;
+    outline: 2px solid #161616;
+    transition: all 0.1s ease-in-out;
+}
+.button button:hover{
+    color: black;
+}
+.buttonWhite button:hover{
+    color: white;
+}
+
+.button:hover, button:hover,.buttonWhite:hover{
+    cursor: pointer;
+}
+.buttonWhite{
+    background: #FFFFFF;
+    border-radius: 100px;
+    outline: 2px solid #161616;
+
+}
+.buttonWhite:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    background: black;
+    outline-offset: 0;
+    outline: 2px #a6a5a5 solid;
+    transition: all 0.1s ease-in-out;
+}
+
+.buttonWhite button{
+    color: black;
+}
+header .flex{
+    display: flex;
+    align-items: baseline;
+    gap:10px;
+}
+button{
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.firstPage {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+.firstPage .about {
+    margin: auto 0 auto 10%;
+}
+.firstPage h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    color: #161616;
+}
+.firstPage p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #161616;
+}
+.twoButtons{
+    display: flex;
+    gap: 10%;
+}
+.firstPage img{
+    width: 100%;
+    height: 100%;
+}
+.firstPage .img{
+    width: 50%;
+    height: 50%;
+}
+.secondPage{
+    padding: 15% 0 15% 10%;
+    background-image: url("images/booksBackground.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+.secondPage h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 49px;
+    margin-block-start: 0;
+    margin-block-end: 1em;
+    line-height: 54px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+.secondPage p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.thirdPage{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 720px;
+}
+.animationBack{
+    background-image: url("images/backgroundAnimation.svg");
+    transition: background-image 1s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    background-size: cover;
+}
+.animationBack:hover{
+    background-image: url("images/backgroundAnimationTwo.svg");
+    transition: background-image 1s ease-in-out;
+}
+.thirdPage h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 54px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #161616;
+}
+.thirdPage p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #161616;
+}
+.thirdPage .heroText{
+    margin: 5% auto;
+}
+.instrumental{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+.instrumental img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.fourthPage{
+    background: #161616;
+}
+.fourthPage .heroText{
+    margin:  auto;
+    padding: 80px;
+}
+.fourthPage .heroText h3 {
+    margin-block-start: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 54px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+.defaultList{
+    transform: translateX(0);
+    transition: transform 2s ease-in-out;
+}
+.rightList{
+    transform: translateX(-250px);
+    transition: transform 2s ease-in-out;
+}
+.fourthPage .heroText p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.author{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+.description{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6e6d6d;
+}
+.books{
+    width: 100%;
+    overflow: hidden;
+}
+.books ul{
+    width: 10000px;
+    margin-bottom: 50px;
+}
+.books  li{
+    display: inline-flex;
+}
+.book img{
+    display: block;
+    height: 278px;
+    width: 200px;
+}
+.fifthPage{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.fifthPage img{
+    width: 100%;
+    height: 100%;
+}
+.ipadCollage{
+    width: 50%;
+    height: 50%;
+}
+.collageInfo{
+    margin-top: 5%;
+}
+.collageInfo h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: 1px;
+    color: #161616;
+}
+.collageInfo p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #161616;
+}
+.apk{
+    margin: 10% 0 10% 0;
+}
+.apk > div{
+    margin: auto;
+}
+.logoApk{
+    width: 20%;
+    height: 20%;
+    transition: all 1s ease-in-out;
+}
+.logoApk:hover{
+    width: 21%;
+    height: 21%;
+    transition: all 1s ease-in-out;
+}
+.apk p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    color: #161616;
+}
+.apk img{
+    width: 100%;
+    height: 100%;
+}
+.download{
+    width: 10%;
+    height: 10%;
+}
+.download button{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    background-color: #161616;
+}
+footer p{
+    margin-block-start: 0.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.logos{
+    display: flex;
+}
+.footerInfo{
+    padding: 0 5% 0 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.footerFlex{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footerFlex a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 35px;
+    border-bottom: 1px solid transparent;
+}
+.footerFlex a:hover{
+    animation: myanimF 3s ease-in-out;
+}
+.logos img{
+    width: 100%;
+    height: 100%;
+}
+.logos > div{
+    width: 70%;
+    height: 70%;
+}
+@keyframes myanimF {
+    20% {
+        border-bottom: 1px solid #5C5C5C;
+    }
+}
+footer hr{
+    outline: #FFFFFF;
+    border-bottom: 1px rgba(255, 255, 255, 0.3);;
+}
+footer h3{
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+}
+footer img{
+    width: 100%;
+    height: 100%;
+}
+.footerLogo{
+    width:15%;
+    height: 15%;
+}
+.footerLogos{
+    width:30%;
+    height: 30%;
+}
+.footerSub > div{
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 930px){
+    .rightList{
+        transform: translateX(-850px);
+        transition: transform 2s ease-in-out;
+    }
+    .fourthPage .heroText{
+        padding-bottom: 40px;
+    }
+    .download {
+        width: 20%;
+        height: 20%;
+    }
+}
+@media only screen and (max-width: 780px){
+    header a {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .firstPage h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .firstPage p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .secondPage h3 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .secondPage p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .thirdPage h3 {
+        font-size: 40px;
+        line-height: 43px;
+    }
+    .thirdPage p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .thirdPage {
+        height:520px;
+    }
+    .fourthPage .heroText h3 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .fourthPage .heroText p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .book img {
+        height: 208px;
+        width: 130px;
+    }
+    .description{
+        margin-right: 30px;
+    }
+    .collageInfo h3 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .collageInfo p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .footerFlex a {
+        font-size: 12px;
+        line-height: 30px;
+    }
+}
+@media only screen and (max-width: 623px){
+    .rightList{
+        transform: translateX(-950px);
+        transition: transform 2s ease-in-out;
+    }
+    .footerFlex{
+        gap:10px;
+    }
+    .firstPage h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .firstPage p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .secondPage h3,.fourthPage .heroText h3 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .secondPage p,.fourthPage .heroText p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .author {
+        font-size: 10px;
+        line-height: 16px;
+    }
+    footer h3 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .footerFlex a {
+        font-size: 10px;
+        line-height: 25px;
+    }
+    .footerLogo{
+        width:20%;
+        height: 20%;
+    }
+    footer p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .littleLogo{
+        width: 15%;
+        height: 15%;
+    }
+}
+@media only screen and (max-width: 581px){
+    .rightList{
+        transform: translateX(-1150px);
+        transition: transform 2s ease-in-out;
+    }
+    header {
+        padding: 10px 10px 0;
+    }
+    .book img {
+        height: 178px;
+        width: 100px;
+    }
+    .firstPage .img {
+        margin-top: 10%;
+    }
+    .secondPage h3,.fourthPage .heroText h3 {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .secondPage p,.fourthPage .heroText p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .collageInfo h3 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .collageInfo p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .thirdPage {
+        height: 420px;
+    }
+    .thirdPage h3 {
+        font-size: 30px;
+        line-height: 33px;
+        margin-block-end: 0;
+    }
+}
+@media only screen and (max-width: 450px){
+    .rightList{
+        transform: translateX(-1250px);
+        transition: transform 2s ease-in-out;
+    }
+    .littleLogo{
+        padding-left: 20px;
+        width:10%;
+        height: 10%;
+    }
+    .logos > div{
+        width: 50%;
+        height: 50%;
+    }
+    header a {
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .littleLogos {
+        width: 40%;
+        height: 40%;
+    }
+    .littleLogo {
+        width: 20%;
+        height: 20%;
+    }
+    .description {
+        font-size: 8px;
+        line-height: 18px;
+    }
+    .secondPage h3,.fourthPage .heroText h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .secondPage p,.fourthPage .heroText p {
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .collageInfo h3 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .collageInfo p {
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .thirdPage {
+        height: 420px;
+    }
+    .thirdPage h3 {
+        font-size: 25px;
+        line-height: 28px;
+        margin-block-end: 0;
+    }
+    .footerFlex a {
+        font-size: 8px;
+        line-height: 20px;
+    }
+    .download {
+        width: 30%;
+        height: 30%;
+    }
+}@media only screen and (max-width: 350px){
+    .rightList{
+        transform: translateX(-1350px);
+        transition: transform 2s ease-in-out;
+    }
+    .fourthPage .heroText {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+    .firstPage p {
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .collageInfo {
+        margin-top: 0;
+    }
+    .fifthPage{
+        padding: 5% 5px 0 5px;
+    }
+    button {
+        padding: 6px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .secondPage h3,.fourthPage .heroText h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .secondPage p,.fourthPage .heroText p {
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .collageInfo h3 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .collageInfo p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .ipadCollage{
+        margin-top: 20%;
+    }
+    .thirdPage {
+        height: 420px;
+    }
+    .thirdPage h3 {
+        font-size: 25px;
+        line-height: 28px;
+        margin-block-end: 0;
+    }
+    .footerFlex a {
+        font-size: 8px;
+        line-height: 20px;
+    }
+    .download {
+        width: 30%;
+        height: 30%;
+    }
+}
